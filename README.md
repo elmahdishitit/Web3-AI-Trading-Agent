@@ -2,6 +2,10 @@
 
 The chapters in this README follow the YouTube video walkthrough: [Build an Autonomous Web3 AI Trading Agent](https://youtu.be/2wQn_nvAQp8).
 
+See also [Chainstack Developer Portal](https://docs.chainstack.com/docs/mastering-web3-llms-and-ai-use).
+
+And [sign up with Chainstack](http://console.chainstack.com/) for the best Web3 infrastructure & RPC nodes.
+
 ⚠️ NOT FOR PRODUCTION: This code is for learning purposes only. We assume no responsibility for the code or its usage. Modify for your needs and learn from it—examples, issues, and PRs all contain valuable insights.
 
 ## Overview
@@ -21,19 +25,19 @@ This is a 'the hard way' type of project seeking to get your hands deep into the
 
 ## Table of contents
 
-1. [**The Stack**](#chapter-the-stack) - Technology stack overview and setup
-2. [**The Pipeline**](#chapter-the-pipeline) - Development pipeline architecture overview
-3. [**The Implementation**](#chapter-the-implementation) - Environment setup and manual/automated swaps
-4. [**Stateless Agent**](#chapter-stateless-agent) - Basic AI trading agent without memory
-5. [**Stateful Agent**](#chapter-stateful-agent) - Memory-enabled agent with learning capabilities
-6. [**Interlude & Your Own Model**](#chapter-interlude--your-own-model) - Fine-tuning methodology overview
-7. [**Generative Adversarial Networks & Synthetic Data**](#chapter-generative-adversarial-networks--synthetic-data) - GAN-based synthetic data generation
-8. [**Teacher to Student Distillation**](#chapter-teacher-to-student-distillation) - Knowledge transfer from large to small models
-9. [**Fuse the LoRA Delta & Convert to Ollama**](#chapter-fuse-the-lora-delta--convert-to-ollama) - Model deployment options
-10. [**Reinforcement Learning**](#chapter-reinforcement-learning) - RL-enhanced trading strategies
+1. [**Stack**](#chapter-the-stack) - Technology stack overview and setup
+2. [**Pipeline**](#chapter-the-pipeline) - Development pipeline architecture overview
+3. [**Implementation**](#chapter-the-implementation) - Environment setup and manual/automated swaps
+4. [**Stateless agent**](#chapter-stateless-agent) - Basic AI trading agent without memory
+5. [**Stateful agent**](#chapter-stateful-agent) - Memory-enabled agent with learning capabilities
+6. [**Interlude & your own model**](#chapter-interlude--your-own-model) - Fine-tuning methodology overview
+7. [**Generative adversarial networks (GANs) & synthetic data**](#chapter-generative-adversarial-networks--synthetic-data) - GAN-based synthetic data generation
+8. [**Teacher to student distillation**](#chapter-teacher-to-student-distillation) - Knowledge transfer from large to small models
+9. [**Fuse the LoRA delta & convert to Ollama**](#chapter-fuse-the-lora-delta--convert-to-ollama) - Model deployment options
+10. [**Reinforcement learning**](#chapter-reinforcement-learning) - RL-enhanced trading strategies
 
 ### Reference
-- [**Project Structure**](#project-structure) - Complete codebase organization
+- [**Project structure**](#project-structure) - Complete codebase organization
 - [**Resources**](#resources) - Documentation, APIs, and research papers
 
 ---
@@ -1211,6 +1215,7 @@ Canary words offer clear evidence that your model relies on newly trained knowle
 What we are going to do further is create a synthetic dataset based on the real Uniswap V4 BASE mainnet ETH-USDC swaps and use this synthetic data to train our smaller Qwen student model based on the output from the bigger QwQ teacher model.
 
 This is a bit roundabout way just to show that it's possible—and I think can be very useful actually for creating sophisticated trading strategies & models, but it's not necessary, of course.
+
 ---
 
 ## CHAPTER: GENERATIVE ADVERSARIAL NETWORKS & SYNTHETIC DATA
@@ -1753,6 +1758,8 @@ Alternative: Direct MLX execution:
 ```bash
 MLX_MODEL=True python on-chain/uniswap_v4_stateful_trading_agent.py
 ```
+
+---
 
 ## CHAPTER: REINFORCEMENT LEARNING
 
