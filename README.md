@@ -19,6 +19,25 @@ This is a 'the hard way' type of project seeking to get your hands deep into the
 
 ---
 
+## Table of contents
+
+1. [**The Stack**](#chapter-the-stack) - Technology stack overview and setup
+2. [**The Pipeline**](#chapter-the-pipeline) - Development pipeline architecture overview
+3. [**The Implementation**](#chapter-the-implementation) - Environment setup and manual/automated swaps
+4. [**Stateless Agent**](#chapter-stateless-agent) - Basic AI trading agent without memory
+5. [**Stateful Agent**](#chapter-stateful-agent) - Memory-enabled agent with learning capabilities
+6. [**Interlude & Your Own Model**](#chapter-interlude--your-own-model) - Fine-tuning methodology overview
+7. [**Generative Adversarial Networks & Synthetic Data**](#chapter-generative-adversarial-networks--synthetic-data) - GAN-based synthetic data generation
+8. [**Teacher to Student Distillation**](#chapter-teacher-to-student-distillation) - Knowledge transfer from large to small models
+9. [**Fuse the LoRA Delta & Convert to Ollama**](#chapter-fuse-the-lora-delta--convert-to-ollama) - Model deployment options
+10. [**Reinforcement Learning**](#chapter-reinforcement-learning) - RL-enhanced trading strategies
+
+### Reference
+- [**Project Structure**](#project-structure) - Complete codebase organization
+- [**Resources**](#resources) - Documentation, APIs, and research papers
+
+---
+
 ## CHAPTER: THE STACK
 
 This chapter outlines the complete technology stack for building a Web3 AI trading agent. We prioritize local-first development, giving you full control over your infrastructure while maintaining the security and transparency that Web3 developers expect.
