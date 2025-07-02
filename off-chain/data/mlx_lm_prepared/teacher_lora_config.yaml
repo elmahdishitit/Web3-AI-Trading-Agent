@@ -1,0 +1,87 @@
+# The path to the local model directory or Hugging Face repo
+# https://huggingface.co/Qwen/Qwen2.5-3B
+model: "Qwen/Qwen2.5-3B"
+
+# Whether or not to train (boolean)
+train: true
+
+# The fine-tuning method: "lora", "dora", or "full"
+fine_tune_type: lora
+
+# The optimizer with its possible inputs
+optimizer: adamw
+optimizer_config:
+  adamw:
+    betas: [0.9, 0.98]
+    eps: 1e-6
+    weight_decay: 0.01
+    bias_correction: true
+
+# Directory with {train, valid, test}.jsonl files
+data: "off-chain/data/mlx_lm_prepared"
+
+# The PRNG seed
+seed: 42
+
+# Number of layers to fine-tune
+num_layers: 16
+
+# Minibatch size
+batch_size: 1
+
+# Iterations to train for
+iters: 400
+
+# Number of validation batches, -1 uses the entire validation set
+val_batches: 25
+
+# Adam learning rate
+learning_rate: 2e-4
+
+# Number of training steps between loss reporting
+steps_per_report: 10
+
+# Number of training steps between validations
+steps_per_eval: 200
+
+# Load path to resume training with the given adapter weights
+resume_adapter_file: null
+
+# Save/load path for the trained adapter weights
+adapter_path: "off-chain/models/trading_model_lora"
+
+# Save the model every N iterations
+save_every: 100
+
+# Evaluate on the test set after training
+test: true
+
+# Number of test set batches, -1 uses the entire test set
+test_batches: -1
+
+# Maximum sequence length
+max_seq_length: 2048
+
+# Use gradient checkpointing to reduce memory use
+grad_checkpoint: true
+
+# LoRA parameters can only be specified in a config file
+lora_parameters:
+  # The layer keys to apply LoRA to.
+  # These will be applied for the last lora_layers
+  keys: ["self_attn.q_proj", "self_attn.v_proj"]
+  rank: 8
+  scale: 20.0
+  dropout: 0.0
+
+# Learning rate schedule
+lr_schedule:
+  name: cosine_decay
+  warmup: 100 # 0 for no warmup
+  warmup_init: 1e-7 # 0 if not specified
+  arguments: [2e-4, 1000, 1e-7] # passed to scheduler
+
+# Token weighting parameters to emphasize Canary words
+token_weighting:
+  special_tokens: ["RECOMMENDATION", "APE", "IN", "OUT", "NEUTRAL"]
+  weight: 2.5  # Stronger weight for Canary tokens in loss calculation
